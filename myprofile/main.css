@@ -26,12 +26,13 @@ body {
 
 .portifolio-body {
     /* position: relative; */
-    margin: -720px auto;
+    margin: -700px auto;
    width: 75%;
    z-index: 3;
 }
 
 /* NAVIGATION BAR */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -107,6 +108,7 @@ nav ul li:hover {
 }
 
 /* PURPLE BACKGROUND */
+
 .purple_side{
     position: absolute;
     width: 900px !important;
@@ -217,6 +219,7 @@ nav ul li:hover {
 }
 
 /* PROFILE PICTURE */
+
 .dp {
     width: 850px;
     height: 1138px;
@@ -228,16 +231,17 @@ nav ul li:hover {
 
 
 /* *****SERVICES PAGE ******/
-.services_section{
-    font-family: Open Sans;
 
+.services_section{
+    /* font-family: Open Sans; */
+    /* border: 1px solid red; */
+    margin-top: 70px;
 }
 
-
 .srvc_dscrpt{
-
+    margin: 50px 0;
     /* align-items: center; */
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .srvc_title{
@@ -257,19 +261,20 @@ nav ul li:hover {
 
 .my_services{
     display: flex;
-    justify-content:space-between ;
-    margin: 40px 270px;
-    padding:auto 10px ;
+    justify-content: space-between;
+    margin-top: 27px;
+    /* border: 1px solid red; */
 }
 
 /* *****SERVICES-BACKEND ***** */
+
 .backend_skills{
     border-radius: 20px;
     width: 334px;
     height: 375px;
     text-align: center;
     padding-right: 0;
-   }
+}
 
 .services_icons{
     margin-bottom: 5px;
@@ -277,13 +282,14 @@ nav ul li:hover {
 }
 
 .srvc_header{
-    font-size: 23px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin: 15px 0;
 }
 
 ul{
     list-style-type: none;
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 /* *****SERVICES-FRONTEND***** */
