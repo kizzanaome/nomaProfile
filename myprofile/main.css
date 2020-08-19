@@ -14,21 +14,12 @@ body {
 }
 
 .introduction {
-    /* position: absolute; */
-    /* top: 0; */
-    /* z-index: 0; */
     background-image: url('images/nomabg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
-}
-
-.portifolio-body {
-    /* position: relative; */
-    margin: -700px auto;
-   width: 75%;
-   z-index: 3;
+    margin-bottom: 200px;
 }
 
 /* NAVIGATION BAR */
@@ -46,6 +37,9 @@ body {
     height: 31px;
     height: 40px;
     margin: 17px 0 50px;
+    margin: 0 auto 50px;
+    width: 73%;
+    padding: 17px 0;
 }
 
 .logo {
@@ -92,7 +86,6 @@ nav ul li:hover {
     border-radius: 7px;
     font-size: 17px;
     font-weight: 500;
-    /* font-family: Rubik-medium; */
     transition: .3s;
     border: none;
     color: #FFFFFF;
@@ -138,6 +131,12 @@ nav ul li:hover {
     /* width: 75%; */
     /* margin: 0 auto; */
     /* z-index: 2; */
+    width: 73%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .dp_section {
@@ -157,7 +156,7 @@ nav ul li:hover {
     z-index: 1;
 }
 
-.side-text{
+.side_text{
     font-size: 25px;
     color: #000000;
 }
@@ -189,6 +188,7 @@ nav ul li:hover {
     font-size: 19px;
     font-family: Rubik-medium;
     margin-top: 17px;
+    margin: 17px 0;
     /* font-style: normal; */
 }
 
@@ -304,6 +304,15 @@ ul{
 
 /* ABOUT_ME PAGE */
 
+.aboutbg {
+    width: 100%;
+    height: auto;
+
+    background-image: url('images/aboutBg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .about{
     display: flex;
     justify-content: space-between;
@@ -363,11 +372,11 @@ li{
 
 }
 
-.about_image{
+/* .about_image{
     height: 472px; 
     padding-left: 80px;
     z-index: 0;
-}
+} */
 
 
 
