@@ -1,0 +1,213 @@
+/* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0088a9;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links,
+    .hire_btn {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+  }
+
+
+/* Media queries for responsiveness */
+
+/* ------ Most of the Smartphones Mobiles ------- */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .header {
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto 20px; */
+        width: 83%;
+        /* padding: 15px 0; */
+    }
+
+    /* PURPLE BACKGROUND */
+
+    .purple_side{
+        display: none;
+        /* position: absolute;
+        left: 0px;
+        top: 100px; */
+    }
+
+    /* PROFILE SECTION */
+
+    .section {
+        width: 83%;
+        margin: 0 auto;
+        display: block;
+        /* justify-content: space-between;
+        align-items: center; */
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .side_text{
+        font-size: 20px;
+        /* color: #000000; */
+    }
+
+    .my_name{
+        font-size: 50px;
+        /* font-weight: 500; */
+        color: #000;
+        margin: 15px 0;
+    }
+
+    em {
+        /* font-weight: lighter; */
+        font-size: 15px;
+        /* font-style: normal; */
+    }
+
+    .download_cv_btn {
+        /* width: 170px;
+        height: 50px; */
+        margin: 25px 0;
+        background-color: #794CFB !important;
+        /* border-radius: 7px;
+        font-weight: 500;
+        transition: .5s; */
+        border: none;
+        /* color: #FFFFFF; */
+    }
+    
+    .download_cv_btn:focus {
+        background-color: transparent !important;
+        border: 2px solid #794CFB;
+        /* transition: .5s; */
+        /* border: 2px solid #fff; */
+        /* color: #794CFB; */
+    }
+
+    /* PROFILE PICTURE */
+
+    .dp {
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+    }
+
+    /* SERVICES SECTION */
+
+    .services_section,
+    .portfolio_content {
+        width: 83%;
+        height: auto;
+        /* margin: 0 auto; */
+        display: block;
+        /* align-items: center; */
+    }
+
+    .srvc_dscrpt {
+        margin: 70px 0;
+        /* text-align: center; */
+    }
+
+    /* THE SERVICES */
+
+    .my_services {
+        display: block;
+        /* justify-content: space-between; */
+    }
+
+    /* THE SERVICES_BACKEND */
+
+    .backend_skills {
+        /* border-radius: 15px; */
+        width: 300px;
+        height: 377px;
+        /* text-align: center; */
+        /* padding-right: 0; */
+        box-shadow: -5px -5px 7px rgba(0, 0, 0, 0.05), 5px 5px 5px rgba(0, 0, 0, 0.07);
+    }
+
+    /* SECOND PURPLE BACKGROUND */
+
+    .second_purple_side {
+        /* position: absolute;
+        top: 1600px;
+        right: 0;
+        z-index: 0 !important; */
+        display: none;
+    }
+
+}
+
+/* ------ Most of the Smartphones Mobiles ------- */
+
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* ---- Most of the Tablets, Ipads ----- */
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* ---- Most of the laptops or desktops ----- */
+
+@media (min-width: 1025px) and (max-width: 1268px) {}
+  
