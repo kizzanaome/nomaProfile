@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @font-face {
     font-family: Rubik;
     src: url("/myprofile/fonts/Rubik/Rubik-Regular.ttf");
@@ -14,18 +16,21 @@
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
-  }
+    src: local("Open Sans"), local("OpenSans"),
+        url("http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff")
+            format("woff");
+}
 
 *,
 html,
 body {
     margin: 0;
     padding: 0;
-    font-family: Rubik;
+    /* font-family: Rubik; */
+    font-family: "Poppins", sans-serif;
 }
 /* 
 body {
@@ -33,7 +38,7 @@ body {
 } */
 
 .introduction {
-    background-image: url('images/nomabg.svg');
+    background-image: url("images/nomabg.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -52,7 +57,7 @@ body {
     height: 31px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
 }
@@ -63,43 +68,43 @@ nav ul li {
     font-family: Rubik-medium;
     font-size: 20px;
     color: #000000;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 nav ul li:hover {
-    color: #794CFB;
-    transition: .5s;
+    color: #794cfb;
+    transition: 0.5s;
     cursor: pointer;
 }
 
-.hire_btn{
+.hire_btn {
     width: 150px;
     height: 45px;
-    background-color: #794CFB;
+    background-color: #794cfb;
     border-radius: 7px;
     font-size: 19px;
     font-family: Rubik-medium;
-    transition: .5s;
+    transition: 0.5s;
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .hire_btn:hover {
-    border: 2px solid #794CFB;
-    color: #794CFB;
+    border: 2px solid #794cfb;
+    color: #794cfb;
     background-color: transparent;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 /* PURPLE BACKGROUND */
-.purple_side{
+.purple_side {
     position: absolute;
     width: 900px !important;
     height: 1200px !important;
     /* left: -76px;
     top: 116px; */
     /* z-index: -2; */
-} 
+}
 
 /* PROFILE SECTION */
 
@@ -120,13 +125,14 @@ nav ul li:hover {
     z-index: 2;
 }
 
-.side-text{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.side-text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
     font-size: 32px;
     color: #000000;
 }
 
-.my_name{
+.my_name {
     font-family: Rubik;
     font-size: 87px;
     color: #fff;
@@ -149,16 +155,16 @@ nav ul li:hover {
     border-radius: 7px;
     font-size: 19px;
     font-family: Rubik-medium;
-    transition: .5s;
+    transition: 0.5s;
     border: 2px solid #fff;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .download_cv_btn:hover {
     background-color: #fff;
-    transition: .5s;
+    transition: 0.5s;
     border: 2px solid #fff;
-    color: #794CFB;
+    color: #794cfb;
 }
 
 /* PROFILE PICTURE */
@@ -168,27 +174,23 @@ nav ul li:hover {
     margin-right: -100px;
 }
 
-
 /* *****SERVICES PAGE ******/
-.services_section{
+.services_section {
     font-family: Open Sans;
-
 }
 
-
-.srvc_dscrpt{
-
+.srvc_dscrpt {
     /* align-items: center; */
     margin-bottom: 15px;
 }
 
-.srvc_title{
+.srvc_title {
     display: flex;
     justify-content: center;
     font-size: 37px;
 }
 
-.srvc_mini_title{
+.srvc_mini_title {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -197,85 +199,80 @@ nav ul li:hover {
 
 /* *****SERVICES ***** */
 
-.my_services{
+.my_services {
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
     margin: 40px 270px;
-    padding:auto 10px ;
+    padding: auto 10px;
 }
 
 /* *****SERVICES-BACKEND ***** */
-.backend_skills{
+.backend_skills {
     border-radius: 20px;
     width: 334px;
     height: 375px;
     text-align: center;
     padding-right: 0;
-   }
+}
 
-.services_icons{
+.services_icons {
     margin-bottom: 5px;
     margin-top: 50px;
 }
 
-.srvc_header{
+.srvc_header {
     font-size: 23px;
     margin-bottom: 15px;
 }
 
-ul{
+ul {
     list-style-type: none;
     font-size: 18px;
 }
 
 /* *****SERVICES-FRONTEND***** */
 
-.frontend_skills{
-    background-color: #794CFB; 
+.frontend_skills {
+    background-color: #794cfb;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.07);
-    color: #FFFFFF; 
+    color: #ffffff;
 }
 
 /* ****SERVICES-DESIGN **** */
 
 /* ABOUT_ME PAGE */
 
-.about{
+.about {
     display: flex;
     justify-content: space-between;
     margin-bottom: 119px;
-  
 }
 
-.side_word{
+.side_word {
     margin-right: -300px;
     margin-top: -450px;
-
 }
 
-.aboutme_content{
-    display:flex;
-    margin:119px -30px 119px 20px;
-
+.aboutme_content {
+    display: flex;
+    margin: 119px -30px 119px 20px;
 }
 
-.content_descript{
-   /* width: 402px;
+.content_descript {
+    /* width: 402px;
    height: 358px; */
-   margin-left: 0;
-   width: 400px;
-   padding-right: 50px;
-
+    margin-left: 0;
+    width: 400px;
+    padding-right: 50px;
 }
 
-.about_title{
-
+.about_title {
     font-size: 37px;
     text-align: right;
     margin-bottom: 40px;
 }
 
-.about_links{
+.about_links {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
@@ -285,52 +282,43 @@ ul{
     margin-bottom: 25px;
     margin-top: 20px;
     margin-bottom: 40px;
-    font-family:Rubik-bold;
+    font-family: Rubik-bold;
 }
 
-
-
-li{
+li {
     margin-right: 0px;
-
 }
-.more_about{
+.more_about {
     font-size: 20px;
-
 }
 
-.about_image{
-    height: 472px; 
+.about_image {
+    height: 472px;
     padding-left: 80px;
     z-index: 0;
 }
 
-
-
 /******* PORTFOLIO PAGE ********/
-.portfolio_title{
+.portfolio_title {
     margin-bottom: 25px;
 }
 
-
-.my_work{
+.my_work {
     width: 1320px;
     padding-left: 320px;
-    align-items: center; 
-    text-align:center;
-    margin-top: 80px; 
-    font-size: 17.8px; 
-
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 17.8px;
 }
 
-
-.row1{
+.row1 {
     display: flex;
     height: 300px;
     /* font-size: 19px; */
 }
 
-.stackoverflow{
+.stackoverflow {
     width: 300px;
     /* height: 1000px; */
     margin-right: 60px;
@@ -343,66 +331,60 @@ li{
     margin: 0;
 } */
 
-.work_logos{
+.work_logos {
     padding-bottom: 15px;
-    text-align:center;
+    text-align: center;
     align-items: center;
     margin-bottom: 15px;
-
 }
 
-.healthid{
+.healthid {
     width: 300px;
     margin-right: 60px;
     text-align: center;
 }
 
-.authors{
+.authors {
+    width: 300px;
+    /* height: 268px; */
+    margin-right: 60px;
+    text-align: center;
+}
+
+.ratr {
     width: 300px;
     /* height: 268px; */
     margin-right: 60px;
     text-align: center;
 }
 
-.ratr{
-    width: 300px;
-    /* height: 268px; */
-    margin-right: 60px;
-    text-align: center;
-
-}
-
-.ratr_logo{
+.ratr_logo {
     padding-left: 80px;
 }
 
-.row2{
+.row2 {
     display: flex;
     height: 300px;
     padding-left: 400px;
-   
 }
 
-.nomacakes{
+.nomacakes {
     width: 230px;
     /* height: 268px; */
     margin-right: 60px;
     text-align: center;
-
 }
 
-.git{
-
+.git {
     width: 230px;
     /* height: 268px; */
     margin-right: 60px;
     text-align: center;
-
 }
 
 /********** CIRCLES DESIGN ***********/
 
-.circles{
+.circles {
     position: absolute;
     width: 199px;
     height: 199px;
@@ -412,21 +394,20 @@ li{
 
 /******** SKILLS *********/
 
-.skills{
-    background-color: #794CFB;
+.skills {
+    background-color: #794cfb;
     width: 1905px;
     height: 250px;
     /* align-items: center;
     text-align: center; */
 
-   
     /* justify-content: space-between; */
 }
 
-.skills_content{
+.skills_content {
     width: 951px;
     height: 162px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     /* text-align: center; */
@@ -434,67 +415,61 @@ li{
     padding-top: 50px;
 }
 
-
-.django{
+.django {
     width: 138px;
     height: 137px;
-    border: 5px solid #FFFFFF;
-    box-sizing:border-box;
+    border: 5px solid #ffffff;
+    box-sizing: border-box;
     border-radius: 100px;
-    
 }
 
-.skills_text{
-
+.skills_text {
     color: white;
     padding-top: 27px;
     text-align: center;
 }
 
-.python{
+.python {
     width: 163px;
     height: 162px;
-    border: 15px solid #FFFFFF;
+    border: 15px solid #ffffff;
     box-sizing: border-box;
     border-radius: 100px;
 }
 
-.flask{
+.flask {
     width: 136px;
     height: 135px;
-    border: 5px solid #FFFFFF;
+    border: 5px solid #ffffff;
     box-sizing: border-box;
     border-radius: 100px;
-} 
+}
 
-.frontend{
-
+.frontend {
     width: 136px;
     height: 135px;
-    border: 5px solid #FFFFFF;
+    border: 5px solid #ffffff;
     box-sizing: border-box;
     border-radius: 100px;
-
 }
 
-.skills_h1{
-    font-size:40px;
+.skills_h1 {
+    font-size: 40px;
 }
-
 
 /********* CONTACT ME *********/
 
-.contact_content{
+.contact_content {
     width: 1300px;
     height: 513px;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.07);
     border-radius: 17px;
-    margin-left:300px;
+    margin-left: 300px;
     margin-top: 100px;
 }
 
-.contact_details{
+.contact_details {
     width: 1000px;
     height: 397px;
     display: flex;
@@ -502,49 +477,43 @@ li{
     text-align: left;
     padding-left: 120px;
     justify-content: space-between;
-    padding-top:50px;
-
-    
+    padding-top: 50px;
 }
 
-.contact_me{
+.contact_me {
     height: 397px;
     width: 402px;
 }
 
-.contact_title{
+.contact_title {
     font-size: 37px;
     margin-bottom: 20px;
 }
 
-
-
-.contact_text{
+.contact_text {
     font-size: 20px;
-    color: #5A5A5A;
-
+    color: #5a5a5a;
 }
 
-.contact_links{
+.contact_links {
     margin: 35px 20px;
-
 }
 
-.email{
+.email {
     display: flex;
     /* justify-content: space-between; */
 }
-.email>p{
+.email > p {
     padding: 20px 50px;
-    font-size:18px;
+    font-size: 18px;
 }
-.linkden{
+.linkden {
     display: flex;
 }
 
-.linkden>p{
+.linkden > p {
     padding: 20px 50px;
-    font-size:18px;
+    font-size: 18px;
 }
 
 /* .contact_input{
@@ -552,7 +521,7 @@ li{
     height: 314px;
 } */
 
-.send_message{
+.send_message {
     height: 397px;
     width: 402px;
     padding-left: 50px;
@@ -562,96 +531,90 @@ li{
 
 } */
 
-input{
+input {
     width: 207px;
     height: 33px;
-    background: #F6F7FB;
+    background: #f6f7fb;
     border-radius: 7px;
     font-size: 16px;
-    margin-bottom:30px;
-    border:none;
+    margin-bottom: 30px;
+    border: none;
 }
 
-
-.input1{
+.input1 {
     display: flex;
     justify-content: space-between;
+}
 
-} 
-
-.input_child{
+.input_child {
     margin-right: 25px;
 }
 
-.input2{
+.input2 {
     display: flex;
     justify-content: space-between;
 }
 
-input[type=text]{
+input[type="text"] {
     padding-left: 15px;
 }
 
-#message{
+#message {
     width: 445px;
     height: 118px;
-    background: #F6F7FB;
+    background: #f6f7fb;
     border-radius: 7px;
     text-align: left;
-    border:none;
+    border: none;
 }
 /* 
 textarea::placeholder{
     margin-left:0px
 } */
 
-.send_button{
-    margin-top:30px;
+.send_button {
+    margin-top: 30px;
     color: white;
-    border:none;
-    width:150px;
+    border: none;
+    width: 150px;
     height: 45px;
-    transition:.5s;
-    background: #794CFB;
+    transition: 0.5s;
+    background: #794cfb;
     border-radius: 7px;
-    font-size:15px;
+    font-size: 15px;
     font-family: Rubik-medium;
-
 }
 
-.send_button:hover{
-    color: #794CFB;
-    transition: .55;
+.send_button:hover {
+    color: #794cfb;
+    transition: 0.55;
     cursor: pointer;
-    border: 2px solid #794CFB ;
+    border: 2px solid #794cfb;
     border-radius: 5px;
-    color: #794CFB;
+    color: #794cfb;
     background-color: transparent;
-    transition: .5s;
-
+    transition: 0.5s;
 }
 
- .contact_bg{
+.contact_bg {
     position: absolute;
     width: 1500px;
     height: 2500px;
     left: 250px;
     top: 3250px;
     z-index: -2;
+}
 
-} 
-
-footer{
+footer {
     width: 320px;
     height: 72px;
     font-family: Rubik;
     font-weight: 300;
     font-size: 20px;
     text-align: center;
-    color: #5A5A5A;
+    color: #5a5a5a;
     align-items: center;
     margin-top: 50px;
     margin-left: 750px;
     bottom: 0;
 }
-
